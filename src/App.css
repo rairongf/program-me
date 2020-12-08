@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.App img {
+  max-width: 500px;
+  align-self: center;
+  height: auto;
+  margin-top: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* .App-link {
+  color: #61dafb;
+} */
+
+.App .container {
+  margin: 40px 0 0 0;
+  width: auto;
+  align-self: center;
+  padding: 0;
+  justify-content: center;
+}
+
+@media screen and (max-width: 570px) {
+
+  img {
+    width: 100%;
+  }
+
+}
+
+
+
+

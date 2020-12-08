@@ -1,0 +1,75 @@
+.Login {
+    background-color: white;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    border: 1px solid #efefef;
+    color: black;
+    padding: 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 20px;
+    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.4);
+}
+
+.Login .input {
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Login .col {
+  width: 100%;
+}
+
+.Login .col .user {
+  width: 100%;
+  z-index: 0;
+}
+
+.Login .col .senha {
+  width: 100%;
+  z-index: 0;
+}
+
+.Login input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .Login input[value="Cadastrar"]{
+    background-color: orange;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .Login .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+@media screen and (max-width: 1600px) {
+    .Login .col {
+      margin-top: 0;
+    }
+    .Login {
+      width: 100%;
+    }
+  }
+
+  

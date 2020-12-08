@@ -1,0 +1,185 @@
+.Inscricao {
+    background-color: white;
+    margin: 0 0 20px 0;
+    width: 100%;
+    border: 1px solid #efefef;
+    color: black;
+    padding: 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 20px;
+    align-items: center;
+    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.4);
+}
+
+.Inscricao h1 {
+    font-family: 'Orbitron';
+}
+
+.Inscricao i {
+    color: orange;
+}
+
+.Inscricao .tooltip {
+    display: inline-block;
+}
+
+.Inscricao .info {
+    display: none;
+    width: 100%;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 10px;
+    /* Position the tooltip */
+    position: relative;
+    z-index: 2;
+    top: 0;
+    right: 6px;
+    cursor: default;
+
+    font-size: 14px;
+}
+
+.Inscricao .tooltip .info::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent orange;
+}
+
+.Inscricao .tooltip:hover .info {
+    display: inline;
+}
+
+.Inscricao .tooltip:hover i {
+    display: none;
+}
+
+.Inscricao .tabela {
+    align-items: center;
+    justify-content: center;
+}
+
+.Inscricao label[name="workshop"] {
+    padding: 12px 12px 12px 12px;
+    display: inline-block;
+}
+
+.Inscricao .row {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    grid-gap: 0;
+}
+
+.Inscricao .col-25 {
+    margin-top: 6px;
+}
+  
+.Inscricao .col-75 {
+    align-items: center;
+    justify-content: left;
+    margin-top: 6px;
+}
+
+.Inscricao hr {
+    margin: 0;
+}
+
+.Inscricao .inscrever {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 80px;
+    margin: 5px;
+}
+
+.Inscricao button[name=agenda] {
+    font-size: 16px;
+    background-color: orange;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 140px;
+    margin: 5px;
+    margin-top: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1650px) {
+
+    .Inscricao .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .Inscricao .col-25,.Inscricao .col-75 {
+      width: 100%;
+      margin-top: 0;
+      justify-content: center;
+    }
+
+    .Inscricao {
+      max-width: 360px;
+    }
+    .Inscricao .avaliar {
+        margin-left: 15px;
+    }
+
+    .Inscricao .inscrever {
+        margin-right: 15px;
+    }
+
+    .Inscricao label {
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .Inscricao .tooltip {
+        margin-top: 10px;
+    }
+
+    .Inscricao .info {
+        margin-left: 10px;
+        padding: 5px;
+    }
+
+    .Inscricao .tooltip .info::after {
+        position: absolute;
+        top: 50%;
+        left: 100%;
+    }
+
+    .tooltip:hover .info {
+        display: inline-block;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    
+    .Inscricao h1 {
+        font-size: 30px;
+    }
+
+    .Inscricao .col-75 {
+        justify-content: center;
+    }
+
+    .Inscricao {
+        width: 240px;
+      }
+
+  }

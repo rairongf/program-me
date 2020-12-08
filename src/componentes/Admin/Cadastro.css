@@ -1,0 +1,181 @@
+.Cadastro {
+    background-color: white;
+    margin: 0 0 20px 0;
+    max-width: 100%;
+    align-items: center;
+    border: 1px solid #efefef;
+    color: black;
+    padding: 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 20px;
+    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.4);
+}
+
+.Cadastro hr {
+    width: 100%;
+    opacity: 0.2;
+}
+
+.input {
+    padding: 10px;
+    margin: 10px;
+    margin-top: 0;
+}
+
+.Cadastro .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.col {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin-top: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-datetime {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin-top: 6px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Cadastro .text-input {
+    width: 100%;
+    z-index: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.Cadastro label {
+    padding: 0;
+    margin-right: 20px;
+}
+
+.Cadastro input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.Cadastro button[name=voltar] {
+    background-color: #a33b3b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.Cadastro .dropdown-button {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+}
+
+.Cadastro .dropdown-button button[name=selecionaWorkshop] {
+    display: block;
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.Cadastro .workshops-dropdown {
+    background-color: white;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0;
+}
+
+.Cadastro .workshops-dropdown button {
+    background-color: rgb(255, 123, 0);
+    color: white;
+    font-size: 14px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.Cadastro .buttons-container {
+    margin-top: 15px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+}
+
+.Cadastro button[name=excluir] {
+    background-color: #a33b3b;
+    color: white;
+    font-size: 14px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.Cadastro .footer-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.Cadastro .col, .Cadastro .col-datetime {
+    width: 100%;
+    margin-top: 12px;
+}
+
+.Cadastro .text-input {
+      width: 100%;
+}
+
+.Cadastro {
+      max-width: 500px;
+}
+
+@media screen and (max-width: 400px) {
+
+    .Cadastro {
+        width: 240px; /* 260px == aproximadamente 7cm de tela */
+    }
+
+    .Cadastro h1 {
+        font-size: 30px;
+    }
+
+    .Cadastro .col-datetime {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0;
+    }
+}

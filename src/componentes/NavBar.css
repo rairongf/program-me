@@ -1,0 +1,122 @@
+.NavBar {
+    background-color: white;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.4);
+    min-height: 60px;
+    padding: 0;    
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border: 0;
+    outline: 0;
+    margin-bottom: 20px;
+    font-family: Orbitron;
+}
+
+.NavBar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    align-self: center;
+    height: 100%;;
+}
+
+.NavBar ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.NavBar ul li button {
+    background-color: rgba(255, 196, 0, 0.6);
+    padding: 0 20px 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(75, 75, 75);
+    margin: 0;
+    align-self: center;
+    height: 60px;
+    width: 8em;
+    outline: 0;
+    border: 0;
+    border-right: 1px solid  rgba(255, 196, 0, 0.8);
+    cursor: pointer;
+    transition: background-color 0.4s;
+    font-family: Orbitron;
+}
+
+.NavBar ul .menu-icon {
+    display: none;
+}
+
+.NavBar ul .menu-icon button {
+    background-color: white;
+    transition: background-color 0.4s;
+    border: 0;
+    height: 60px;
+    width: 6em;
+    padding: 0;
+    margin: 0;
+}
+
+.NavBar ul .menu-icon button:hover {
+    background-color: rgba(255, 196, 0, 0.2);
+}
+
+.NavBar ul .menu-icon i {
+    color: rgb(255, 196, 0);
+    align-self: center;
+    font-size: 30px;
+}
+
+.NavBar ul .buttons {
+    visibility: visible;
+}
+
+.NavBar ul .buttons button:hover {
+    background-color: rgba(255, 196, 0, 8);
+}
+
+.NavBar ul li div.user {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+.NavBar #menu-dropdown button {
+    background-color: rgba(255, 196, 0, 0.6);
+    padding: 0 20px 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(75, 75, 75);
+    margin: 0;
+    align-self: center;
+    height: 60px;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    font-family: Orbitron;
+}
+
+.NavBar #menu-dropdown button:hover {
+    background-color: rgba(255, 196, 0, 8);
+}
+
+@media screen and (max-width: 900px) {
+    .NavBar ul .buttons {
+        visibility: hidden;
+    }
+
+    .NavBar ul .menu-icon {
+        display: block;
+        float: left;
+    }
+}
+
+
+

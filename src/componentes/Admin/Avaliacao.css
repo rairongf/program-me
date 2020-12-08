@@ -1,0 +1,50 @@
+.Cadastro .avaliacoes-list {
+    display: grid;
+    grid-gap: 0;
+}
+
+.Cadastro .avaliacoes-list .user-row {
+    display: grid;
+    grid-template-rows: repeat(1fr, 2);
+    grid-gap: 0;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.4);
+    padding: 16px;
+}
+
+.Cadastro .avaliacoes-list .user-row .nome-nota {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+}
+
+.Cadastro .avaliacoes-list .user-row .nome-nota button {
+    background-color: rgb(211, 79, 3);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 8px;
+    margin-top: 16px;
+    margin-left: 0px;
+}
+
+.Cadastro .avaliacoes-list .user-row .comentario {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+}
+
+.Cadastro .back-button {
+    background-color: #a33b3b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 18px;
+}
