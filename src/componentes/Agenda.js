@@ -54,15 +54,25 @@ function Agenda({history, match}) {
     }
 
     const getAllWorkshopsIds = async() => {
-        let response = await api.get(`/agenda/${matricula}`);
-        let dados = response.data;
-        return setWorkshops(dados);
+        try {
+          let response = await api.get(`/agenda/${matricula}`);
+          let dados = response.data;
+          return setWorkshops(dados);
+        } catch (e) {
+          console.log("Não foi possível buscar os dados dos workshops.\n");
+          console.log("Erro: ", e);
+        }
     }
 
     const getUserName = async() => {
-        let response = await api.get(`/${matricula}`);
-        let dados = response.data;
-        return setUsername(dados.Nome);
+        try {
+          let response = await api.get(`/${matricula}`);
+          let dados = response.data;
+          return setUsername(dados.Nome);
+        } catch (e) {
+          console.log("Não foi possível buscar os dados do aluno.\n");
+          console.log("Erro: ", e);
+        }
     }
 
     useEffect( () => {

@@ -49,8 +49,8 @@ function Inscricao({history, match}) {
             
         try {
             let response = await api.get(`/workshops/available/${matricula}`);
-            const dados = response.data;
-
+            let dados = response.data;
+            
             setWorkshops({
                 Workshops: dados.map( (workshop, index) => {
                     if (workshop.Numero_Participantes === 22) {
@@ -120,7 +120,7 @@ function Inscricao({history, match}) {
 
     useEffect( () => {
         renderWorkshops();
-    })
+    }, [])
     
 
     return (

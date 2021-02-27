@@ -24,21 +24,18 @@ function Login({ history }) {
     async function handleLogin(e) {
         e.preventDefault();
 
-        const response = await api.get(`/${matricula}`);
-
-        
-        if (response.data.Senha === password) {
-            if (matricula === '9999') {
-                history.push(`/admin`);
-            }
-            else {
-                history.push(`/agenda/${matricula}`);
-            }
-            
-        }
-        else {
-            setOpen(true);
-            setPassword('');
+        try{
+          const response = await api.get(`/${matricula}`);
+          if (response.data.Senha === password) {
+            history.push(
+              (matricula === 9999) ? '/admin' : `/agenda/${matricula}`
+            );
+          }
+        } catch(err){
+          window.alert("Erro: ", err);
+        } finally {
+          setOpen(true);
+          setPassword('');
         }
 
     }
