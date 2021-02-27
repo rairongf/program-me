@@ -5,16 +5,6 @@
 /.pnp
 .pnp.js
 
-# database
-/program-me.sql
-/database/*
-/config/*
-/app/*
-
-# backend
-/src/server/*
-/src/services/*
-
 # testing
 /coverage
 
