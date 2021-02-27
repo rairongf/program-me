@@ -53,7 +53,7 @@ function Cadastro({history}) {
             DataMarcada: 
             `${selectedDate.getFullYear()}-${selectedDate.getMonth()+1}-${selectedDate.getDate()} ${selectedDate.getHours()}:${selectedDate.getMinutes()}`,
             Local: local,
-            Avaliacao: avaliacao,
+            //Avaliacao: avaliacao,
         })
 
         setOpen(true);

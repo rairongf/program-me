@@ -6,6 +6,7 @@ const mysql = require('mysql');
 const pool = mysql.createPool({
     connectionLimit: 10,
     user: 'root',
+    password: 'root',
     host: 'localhost',
     port: '3306',
     database: 'progme'
@@ -37,7 +38,7 @@ db.loadWorkshopById = (id) => {
 
 db.loadAvailableWorkshops = (Matricula) => {
     return new Promise((resolve, reject) => {
-        pool.query(`SELECT * FROM workshop WHERE workshop.Id NOT IN (SELECT Workshop_Id FROM usuario_has_workshop WHERE Usuario_Matricula = ${Matricula});`, (err, results) => {
+        pool.query(`SELECT * FROM workshop WHERE workshop.Id NOT IN (SELECT Workshop_Id FROM inscricao WHERE Usuario_Matricula = ${Matricula});`, (err, results) => {
             if (err) {
                 return reject(err);
             }
@@ -59,7 +60,7 @@ db.loadWorkshopsNames = () => {
 
 db.loadUsersSubscriptions = (Matricula) => {
     return new Promise((resolve, reject) => {
-        pool.query(`SELECT * FROM workshop WHERE workshop.Id IN (SELECT Workshop_Id FROM usuario_has_workshop WHERE Usuario_Matricula = ${Matricula})`, (err, results) => {
+        pool.query(`SELECT * FROM workshop WHERE workshop.Id IN (SELECT Workshop_Id FROM inscricao WHERE Usuario_Matricula = ${Matricula})`, (err, results) => {
             if (err) {
                 return reject(err);
             }
@@ -92,7 +93,7 @@ db.findUserData = (Matricula) => {
 
 db.postInscricao = (dadosInscricao) => {
     return new Promise((resolve, reject) => {
-        pool.query('INSERT INTO usuario_has_workshop SET ?', dadosInscricao, (err, results) => {
+        pool.query('INSERT INTO inscricao SET ?', dadosInscricao, (err, results) => {
             if (err) {
                 return reject(err);
             }
@@ -103,7 +104,7 @@ db.postInscricao = (dadosInscricao) => {
 
 db.deleteInscricao = (dadosInscricao) => {
     return new Promise((resolve, reject) => {
-        pool.query(`DELETE FROM usuario_has_workshop WHERE Workshop_Id = ${dadosInscricao.id} AND Usuario_Matricula = ${dadosInscricao.matricula}`, (err, results) => {
+        pool.query(`DELETE FROM inscricao WHERE Workshop_Id = ${dadosInscricao.id} AND Usuario_Matricula = ${dadosInscricao.matricula}`, (err, results) => {
             if (err) {
                 return reject(err);
             }
@@ -158,7 +159,7 @@ db.deleteWorkshop = (idOfWorkshop) => {
 
 db.avaliacaoWorkshop = (idOfWorkshop, Matricula, NotaAvaliada, Comentario) => {
     return new Promise((resolve, reject) => {
-        pool.query(`UPDATE usuario_has_workshop SET NotaAvaliada = ${NotaAvaliada}, Comentario = '${Comentario}' WHERE Usuario_Matricula = ${Matricula} AND Workshop_Id = ${idOfWorkshop}`, (err, results) => {
+        pool.query(`UPDATE inscricao SET NotaAvaliada = ${NotaAvaliada}, Comentario = '${Comentario}' WHERE Usuario_Matricula = ${Matricula} AND Workshop_Id = ${idOfWorkshop}`, (err, results) => {
             if (err) {
                 return reject(err);
             }
@@ -169,7 +170,7 @@ db.avaliacaoWorkshop = (idOfWorkshop, Matricula, NotaAvaliada, Comentario) => {
 
 db.avaliacaoGetNotaAtual = (idOfWorkshop, Matricula) => {
     return new Promise((resolve, reject) => {
-        pool.query(`SELECT NotaAvaliada FROM usuario_has_workshop WHERE Usuario_Matricula = ${Matricula} AND Workshop_Id = ${idOfWorkshop}`, (err, results) => {
+        pool.query(`SELECT NotaAvaliada FROM inscricao WHERE Usuario_Matricula = ${Matricula} AND Workshop_Id = ${idOfWorkshop}`, (err, results) => {
             if (err) {
                 return reject(err);
             }
@@ -180,7 +181,7 @@ db.avaliacaoGetNotaAtual = (idOfWorkshop, Matricula) => {
 
 db.buscarAvaliacoesDoWorkshop = (idOfWorkshop) => {
     return new Promise((resolve, reject) => {
-        pool.query(`SELECT * FROM usuario_has_workshop WHERE Workshop_Id = ${idOfWorkshop}`, (err, results) => {
+        pool.query(`SELECT * FROM inscricao WHERE Workshop_Id = ${idOfWorkshop}`, (err, results) => {
             if (err) {
                 return reject(err);
             }

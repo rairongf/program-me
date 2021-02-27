@@ -46,7 +46,7 @@ export function FormDialog(props) {
 
   useEffect( () => {
     getNotaAtual();
-  }) 
+  }, []) 
 
   const gridStyle = {
     display: 'grid',
