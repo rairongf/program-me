@@ -6,14 +6,14 @@
 .pnp.js
 
 # database
-./program-me/program-me.sql
-./program-me/database/*
-./program-me/config/*
-./program-me/app/*
+/program-me.sql
+/database/*
+/config/*
+/app/*
 
 # backend
-./program-me/src/server/*
-./program-me/src/services/*
+/src/server/*
+/src/services/*
 
 # testing
 /coverage
