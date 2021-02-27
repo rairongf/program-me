@@ -120,7 +120,7 @@ function Inscricao({history, match}) {
 
     useEffect( () => {
         renderWorkshops();
-    }, [])
+    }, [workshops])
     
 
     return (

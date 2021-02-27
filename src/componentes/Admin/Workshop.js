@@ -92,7 +92,7 @@ function Workshop({history}) {
             `${selectedDate.getFullYear()}-${selectedDate.getMonth()+1}-${selectedDate.getDate()} ${selectedDate.getHours()}:${selectedDate.getMinutes()}`,
             Local: local,
             Id: id,
-            Avaliacao: avaliacao,
+            //Avaliacao: avaliacao,
         })
 
         setOpen(true);

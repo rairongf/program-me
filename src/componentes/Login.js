@@ -27,13 +27,11 @@ function Login({ history }) {
         try{
           const response = await api.get(`/${matricula}`);
           if (response.data.Senha === password) {
-            history.push(
-              (matricula === 9999) ? '/admin' : `/agenda/${matricula}`
-            );
+            if (matricula === "9999") history.push("/admin");
+            else history.push(`/agenda/${matricula}`);
           }
         } catch(err){
           window.alert("Erro: ", err);
-        } finally {
           setOpen(true);
           setPassword('');
         }
