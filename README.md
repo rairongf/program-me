@@ -1,68 +1,100 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### :construction: Em construção 
 
-## Available Scripts
+<style>
+  p a:link {
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid lightgrey;
+  }
+  p a:visited {
+    color: black;
+    text-decoration: none;
+  }
+  p a:hover {
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid grey;
+  }
+  p a:active {
+    color: black;
+    text-decoration: none;
+  }
+</style>
 
-In the project directory, you can run:
+<h1 align="center">
+    <img src="src/assets/icons/programme-logo.ico" height=70px" align="center">
+</img>
+    Program<span style="color: #f5d442">{</span>me<span style="color: #f5d442">}</span>
+</h1>
+<p align="center">Plataforma para inscrição no seminário de linguagens de programação da disciplina C005 do INATEL 🚀</p>
+<div align="center">
+  <a style="text-decoration: none" href="https://github.com/rairongf/program-me" target="_blank">
+    <img src="https://img.shields.io/static/v1?label=APP&message=Program{me}&color=f5d442&style=for-the-badge" align="center"/>
+  </a>
+  <a style="text-decoration: none" href="https://github.com/rairongf/program-me/blob/main/LICENSE" target="_blank">
+    <img src="https://img.shields.io/static/v1?label=License&message=MIT&color=f5d442&style=for-the-badge" align="center"/>
+  </a>
+</div>
+<br>
+<p align="center">
+ <a style="text-decoration: none" href="#sobre">Sobre</a> •
+ <a style="text-decoration: none" href="#roadmap">Features</a> • 
+ <a style="text-decoration: none" href="#roadmap">Layout</a> • 
+ <a style="text-decoration: none" href="#tecnologias">Tecnologias</a> • 
+ <a style="text-decoration: none" href="#licenc-a">Licença</a> • 
+ <a style="text-decoration: none" href="#autor">Autor</a>
+</p>
+<h4 align="center">✅ Program<span style="color: #f5d442">{</span>me<span style="color: #f5d442">}</span> 🚀 Concluído ✅</h4>
 
-### `npm start`
+## :information_source: Sobre o projeto
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Program<span style="color: #f5d442">{</span>me<span style="color: #f5d442">}</span>** é uma plataforma web para gerenciamento do seminário final da disciplina Linguagens de Programação e Compiladores (C005) do Instituto Nacional de Telecomunicações — INATEL.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Diversas linguagens de programação são sorteadas para cada grupo de alunos da disciplina todo final de semestre. Cada um dos grupos deve oferecer um workshop introdutório sobre a linguagem e cada aluno da disciplina deve assistir **pelo menos** 3 workshops de outros grupos.
 
-### `npm test`
+Na plataforma, os alunos podem se inscrever em qualquer um dos workshops pré-cadastrados pelo professor responsável da disciplina. Após o workshop, os participantes podem dar uma nota de 0 a 100. Essa avaliação será usada pelo professor da maneira que ele preferir.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## :zap: Features
 
-### `npm run build`
+- [x] Cadastrar participantes
+- [x] Inscrever-se em workshops
+- [x] Avaliar workshops
+- [x] Cadastrar workshops :closed_lock_with_key: **<span style="color: #e0860b">Professor</span>**
+- [x] Alterar dados dos workshops :closed_lock_with_key: **<span style="color: #e0860b">Professor</span>**
+- [ ] Deploy 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## :art: Layout
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+:construction: Screenshots a caminho!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠 Tecnologias
 
-### `npm run eject`
+Esse projeto foi desenvolvido no laboratório _**Coders, Developers & Gamers**_ (**CDG**) _**Hub**_ do INATEL com as seguintes tecnologias:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [ReactJS](https://reactjs.org/)
+- [Date-fns](https://github.com/date-fns/date-fns)
+- [Material-UI](https://github.com/mui-org/material-ui)
+- [Axios](https://github.com/axios/axios)
+- [Sequelize](https://github.com/sequelize/sequelize)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## :rocket: Como executar o projeto
+### Pré-requisitos
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<p>
+  <a style="text-decoration: none" href="https://git-scm.com" target="_blank">Git</a>,
+  <a style="text-decoration: none" href="https://nodejs.org/en/" target="_blank">Node.js</a>.
+</p>
 
-## Learn More
+Além disto é bom ter um editor para trabalhar com o código como o <a style="text-decoration: none" href="https://code.visualstudio.com/" target="_blank">VSCode</a>.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### :globe_with_meridians: Rodando o Back End (servidor)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+:construction: Em construção!
+<!-- https://github.com/tgmarinho/Ecoleta  -->
+<!-- https://gist.github.com/rxaviers/7360908 -->
 
-### Code Splitting
+### :computer: Rodando a aplicação web (Front End)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+:construction: Em construção!
