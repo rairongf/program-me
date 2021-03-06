@@ -1,6 +1,7 @@
 ### :construction: Em construção 
 
-<style>
+<head>
+  <style>
   p a:link {
     color: black;
     text-decoration: none;
@@ -20,6 +21,7 @@
     text-decoration: none;
   }
 </style>
+</head>
 
 <h1 align="center">
     <img src="src/assets/icons/programme-logo.ico" height=70px" align="center">
