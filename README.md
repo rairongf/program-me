@@ -15,6 +15,7 @@
   </a>
 </div>
 <br>
+<!--
 <p align="center">
  <a style="text-decoration: none" href="#sobre">Sobre</a> •
  <a style="text-decoration: none" href="#roadmap">Features</a> • 
@@ -23,6 +24,7 @@
  <a style="text-decoration: none" href="#licenc-a">Licença</a> • 
  <a style="text-decoration: none" href="#autor">Autor</a>
 </p>
+-->
 <h4 align="center">✅ Program<span style="color: #f5d442">{</span>me<span style="color: #f5d442">}</span> 🚀 Concluído ✅</h4>
 
 ## :information_source: Sobre o projeto
