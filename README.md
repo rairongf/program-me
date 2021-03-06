@@ -1,28 +1,5 @@
 ### :construction: Em construção 
 
-<head>
-  <style>
-  p a:link {
-    color: black;
-    text-decoration: none;
-    border-bottom: 2px solid lightgrey;
-  }
-  p a:visited {
-    color: black;
-    text-decoration: none;
-  }
-  p a:hover {
-    color: black;
-    text-decoration: none;
-    border-bottom: 2px solid grey;
-  }
-  p a:active {
-    color: black;
-    text-decoration: none;
-  }
-</style>
-</head>
-
 <h1 align="center">
     <img src="src/assets/icons/programme-logo.ico" height=70px" align="center">
 </img>
